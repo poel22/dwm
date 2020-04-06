@@ -128,10 +128,12 @@ static Key keys[] = {
 	/* { MODKEY|ShiftMask,		XK_u,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_i,		setlayout,	{.v = &layouts[3]} },
 	{ MODKEY,			XK_o,		setlayout,	{.v = &layouts[4]} },
-	{ MODKEY,			XK_p,		setlayout,	{.v = &layouts[4]} },
+	{ MODKEY,			XK_p,		setlayout,	{.v = &layouts[5]} },
 	/* { MODKEY|ShiftMask,		XK_i,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_bracketleft,		incnmaster,     {.i = +1 } },
-	{ MODKEY|ShiftMask,		XK_bracketleft,		incnmaster,     {.i = -1 } },
+	{ MODKEY,			XK_bracketright,     		setlayout,	{.v = &layouts[6]} },
+	/* { MODKEY|ShiftMask,		XK_bracketright,		setlayout,	{.v = &layouts[5]} }, */
+	{ MODKEY,			XK_bracketright,		incnmaster,     {.i = +1 } },
+	{ MODKEY|ShiftMask,		XK_bracketright,		incnmaster,     {.i = -1 } },
 	/* { MODKEY,			XK_bracketright,	spawn,		SHCMD("mpc seek +10") }, */
 	/* { MODKEY|ShiftMask,		XK_bracketright,	spawn,		SHCMD("mpc seek +120") }, */
 	{ MODKEY,			XK_backslash,		view,		{0} },
