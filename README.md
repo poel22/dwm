@@ -1,4 +1,6 @@
-# Luke's build of dwm
+Forked from [Luke's build of dwm](https://github.com/LukeSmithxyz/dwm)
+
+# Paul's build of dwm
 
 Here's my build of dwm.
 
