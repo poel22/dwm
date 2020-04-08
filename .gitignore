@@ -2,3 +2,5 @@
 *.rej
 larbs.pdf
 patches
+*.o
+dwm
